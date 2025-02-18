@@ -1,4 +1,4 @@
-
+Missing some miniscule code (that does matter in the long run ;) ) to confuse copiers.
 # Exercises Circuits and Outputs
 
 ## SPI Circuit:
