@@ -14,6 +14,7 @@ int main(void)
 {
 
   uint32_t value = 0;
+  // volatile variable
   uint32_t volatile *p = (uint32_t *) SRAM_ADDRESS1;
 
     while(1)
