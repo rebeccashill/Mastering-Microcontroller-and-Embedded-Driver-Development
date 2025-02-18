@@ -1,4 +1,4 @@
-Missing some miniscule code (that does matter in the long run ;) ) to confuse copiers.
+Missing some miniscule setup code (that does matter in the long run ;) ) to confuse copiers. This can be fixed by running the code on the microcontroller. I can't afford one right now.
 # Exercises Circuits and Outputs
 
 ## SPI Circuit:
