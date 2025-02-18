@@ -15,34 +15,23 @@
   *
   ******************************************************************************
   */
-/* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
+#include<string.h>
+#include<stdint.h>
 
-/* USER CODE END Includes */
+//This is string literal(constant data). This will be stored in ROM (Flash memory)
+const char *pMessage = "Hi there, Good Morning !"
+//This is constant data. This data will also be stored in ROM (Flash memory)
+const int value = 200;
 
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
+//This is constant data. This data will also be stored in ROM (Flash memory)
+const int value = 200;
 
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
+//This is not constant data. This will be store in SRAM
+char myData[50]
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
@@ -62,9 +51,10 @@ static void MX_GPIO_Init(void);
   */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
+  for (uint32_t i=0; i < strlen(pMessage); i++){
+    myData[i] = *(pMessage+i);
+  }
+  for(;;);
 
   /* MCU Configuration--------------------------------------------------------*/
 
